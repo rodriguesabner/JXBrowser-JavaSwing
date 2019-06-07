@@ -1,14 +1,18 @@
 package com.kingaspx.util;
 
 import com.kingaspx.version.Version;
-import com.teamdev.jxbrowser.chromium.Browser;
-import com.teamdev.jxbrowser.chromium.BrowserContext;
-import com.teamdev.jxbrowser.chromium.BrowserContextParams;
-import com.teamdev.jxbrowser.chromium.BrowserPreferences;
+import com.teamdev.jxbrowser.chromium.*;
+import com.teamdev.jxbrowser.chromium.BrowserKeyEvent.KeyCode;
+import com.teamdev.jxbrowser.chromium.BrowserKeyEvent.KeyModifiers;
+import com.teamdev.jxbrowser.chromium.swing.BrowserView;
+
+import java.awt.*;
+
+import static com.teamdev.jxbrowser.chromium.BrowserKeyEvent.KeyEventType.*;
 import com.teamdev.jxbrowser.chromium.events.ConsoleEvent;
 import com.teamdev.jxbrowser.chromium.events.TitleEvent;
-import com.teamdev.jxbrowser.chromium.swing.BrowserView;
-import java.awt.BorderLayout;
+
+import static javax.swing.DefaultButtonModel.PRESSED;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -62,10 +66,7 @@ public class AbrirSite {
         //Licença do JX
         BrowserUtil.setVersion(Version.V6_22);
 
-        BrowserContextParams params = new BrowserContextParams(perfil);
-        BrowserPreferences.setChromiumSwitches("user-data-dir=" + perfil);
-        BrowserContext context = new BrowserContext(params);
-        browser = new Browser(context);
+        browser = new Browser();
         view = new BrowserView(browser);
 
         panel.add(view, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));

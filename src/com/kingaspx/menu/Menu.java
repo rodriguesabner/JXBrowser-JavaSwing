@@ -30,7 +30,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 173, 199));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Delete_20px_7.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Delete_20px.png"))); // NOI18N
         jButton1.setToolTipText("Fechar");
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -44,7 +44,7 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Globe_20px_4.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Globe_20px.png"))); // NOI18N
         jLabel1.setText("Título Aqui");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
 
@@ -57,7 +57,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 800, 530));
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 730, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Search_20px_5.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/icons8_Search_20px.png"))); // NOI18N
         jButton2.setToolTipText("Ir");
         jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
