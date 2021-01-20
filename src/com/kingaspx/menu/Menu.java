@@ -1,5 +1,6 @@
 package com.kingaspx.menu;
 
+import com.formdev.flatlaf.FlatDarkLaf;
 import com.kingaspx.util.AbrirSite;
 import java.awt.Frame;
 import java.awt.event.KeyEvent;
@@ -53,6 +54,11 @@ public class Menu extends javax.swing.JFrame {
         url_txtfield.setText("https://memoji.kingaspx.com");
         url_txtfield.setBorder(null);
         url_txtfield.setCaretColor(new java.awt.Color(255, 255, 255));
+        url_txtfield.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                url_txtfieldFocusGained(evt);
+            }
+        });
         url_txtfield.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 url_txtfieldKeyReleased(evt);
@@ -247,32 +253,15 @@ public class Menu extends javax.swing.JFrame {
         site.browser.reload();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void url_txtfieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_url_txtfieldFocusGained
+        url_txtfield.selectAll();
+    }//GEN-LAST:event_url_txtfieldFocusGained
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+        FlatDarkLaf.install();
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
