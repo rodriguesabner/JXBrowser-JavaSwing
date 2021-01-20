@@ -5,6 +5,7 @@ import com.kingaspx.util.BrowserModel;
 import com.teamdev.jxbrowser.chromium.Browser;
 import com.teamdev.jxbrowser.chromium.swing.BrowserView;
 import java.awt.Frame;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,8 @@ public class Menu extends javax.swing.JFrame {
 
     public Menu() {
         initComponents();
+        
+        setIcon();
 
         browserController = new BrowserController(url_txtfield, button_back, button_forward);
         listBrowsers = new ArrayList<>();
@@ -63,7 +66,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Safari Java Swing");
+        setTitle("Safari Browser");
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(25, 28, 31));
@@ -271,7 +274,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kingaspx/icon/happy-guy.png"))); // NOI18N
-        jLabel1.setText("Crie uma nova aba para começar a navegar");
+        jLabel1.setText("Create a new tab to get started");
         jLabel1.setToolTipText("");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -279,7 +282,7 @@ public class Menu extends javax.swing.JFrame {
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jButton6.setText("Nova Aba");
+        jButton6.setText("New Tab");
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setFocusPainted(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -528,6 +531,10 @@ public class Menu extends javax.swing.JFrame {
         indexTab++;
 
         listBrowsers.add(browserModel);
+    }
+
+    private void setIcon() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/com/kingaspx/icon/safari_logo.png")));
     }
 
 }
