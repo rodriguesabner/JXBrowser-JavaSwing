@@ -47,16 +47,40 @@ If you want a fixed URL, do not put a String as a parameter, change the String t
 ```
 //browser.loadURL(URL);
 browser.loadURL("www.google.com");
+
+//Back Page
+browser.goBack();
+
+//Forward Page
+browser.goForward();
+
+//reload
+browser.reload();
 ```
 
 ## Screenshot
 
 ### Initial Screen
-![image](https://user-images.githubusercontent.com/40338524/105224144-93744200-5b3b-11eb-8e6c-d68a084f0f93.png)
-![image](https://user-images.githubusercontent.com/40338524/105223781-fe714900-5b3a-11eb-9b32-1d8e24220ac0.png)
+![image](https://user-images.githubusercontent.com/40338524/105253568-83218e80-5b5e-11eb-8f80-7bb04b7ad91d.png)
+
+## Home Screen
+![image](https://user-images.githubusercontent.com/40338524/105253583-89176f80-5b5e-11eb-8092-71e9b64c2042.png)
+
+### Moving with cursor.
+![image](https://user-images.githubusercontent.com/40338524/105253631-9e8c9980-5b5e-11eb-8820-d97622c8efc2.png)
+
 
 ### Interacting with our browser.
-![image](https://user-images.githubusercontent.com/40338524/105223863-1e087180-5b3b-11eb-949a-5de93f7c97aa.png)
-![image](https://user-images.githubusercontent.com/40338524/105223890-26f94300-5b3b-11eb-9930-76e95a9c19ba.png)
-![image](https://user-images.githubusercontent.com/40338524/105223931-3a0c1300-5b3b-11eb-98db-48f047afef43.png)
 
+#### (fullscreen)
+
+![image](https://user-images.githubusercontent.com/40338524/105253654-a9472e80-5b5e-11eb-9f73-899f64bc0e2b.png)
+
+![image](https://user-images.githubusercontent.com/40338524/105253742-d693dc80-5b5e-11eb-868e-9dd56b495efc.png)
+
+
+## Multiple Tabs
+
+![image](https://user-images.githubusercontent.com/40338524/105253802-f9be8c00-5b5e-11eb-91c0-70ca9f04c411.png)
+
+![image](https://user-images.githubusercontent.com/40338524/105253821-0347f400-5b5f-11eb-9e9f-bdd68697daad.png)
