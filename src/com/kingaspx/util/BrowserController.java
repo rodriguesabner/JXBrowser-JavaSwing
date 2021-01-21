@@ -2,7 +2,6 @@ package com.kingaspx.util;
 
 import com.kingaspx.menu.Menu;
 import com.teamdev.jxbrowser.chromium.Browser;
-import com.teamdev.jxbrowser.chromium.BrowserPreferences;
 import com.teamdev.jxbrowser.chromium.events.ConsoleEvent;
 import com.teamdev.jxbrowser.chromium.events.FailLoadingEvent;
 import com.teamdev.jxbrowser.chromium.events.FinishLoadingEvent;
@@ -13,7 +12,6 @@ import com.teamdev.jxbrowser.chromium.events.ProvisionalLoadingEvent;
 import com.teamdev.jxbrowser.chromium.events.StartLoadingEvent;
 import com.teamdev.jxbrowser.chromium.events.TitleEvent;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
@@ -33,8 +31,8 @@ public class BrowserController {
     }
 
     public void newBrowser(Integer id, Browser browser, String url, JTabbedPane jTabbedPane) {
-        BrowserPreferences.setChromiumSwitches("--disable-gpu", "--disable-software-rasterizer", "--disable-web-security", "--allow-file-access-from-files");
-
+        browser.setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 11.0) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/11.0 Safari/602.1.50");
+        
         browser.addTitleListener((TitleEvent evt) -> {
             jTabbedPane.setTitleAt(id, evt.getTitle());
         });
