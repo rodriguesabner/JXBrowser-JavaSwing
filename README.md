@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Built With
 
 * [JXBrowser](https://jxbrowser-support.teamdev.com/release-notes/2019/v6-23-1.html) - The JXBrowser Library
-* [License](https://github.com/king-aspx/JXBrowser-JavaSwing/blob/master/MyLicense-1.0.jar) - This is the license I created, you will need it.
+* [License](https://github.com/kingaspx/JXBrowser-JavaSwing/blob/master/lib/MyLicense-1.0.jar) - This is the license I created, you will need it.
 
 ```
 Documentation JXBrowser - https://jxbrowser.support.teamdev.com/support/solutions
