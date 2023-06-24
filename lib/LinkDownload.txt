@@ -1,8 +1,16 @@
-JXBrowser
+JXBrowser (REQUIRED)
 https://github.com/rodriguesabner/JXBrowser-JavaSwing/raw/c8e1097f1dca87b5b38347d0684902e2bd98fa53/lib/jxbrowser-6.23.1.jar
+
+Choose one below:
 
 JXBrowser W32
 https://github.com/rodriguesabner/JXBrowser-JavaSwing/raw/c8e1097f1dca87b5b38347d0684902e2bd98fa53/lib/jxbrowser-win32-6.23.1.jar
 
-JXBrowser W63
+JXBrowser W64
 https://github.com/rodriguesabner/JXBrowser-JavaSwing/raw/c8e1097f1dca87b5b38347d0684902e2bd98fa53/lib/jxbrowser-win64-6.23.1.jar
+
+JXBrowser MacOS
+https://github.com/ShyykoSerhiy/gfm-plugin/blob/master/lib/jxbrowser/jxbrowser-mac-6.23.1.jar
+
+JXBrowser Linux 64
+https://github.com/ShyykoSerhiy/gfm-plugin/blob/master/lib/jxbrowser/jxbrowser-linux64-6.23.1.jar
